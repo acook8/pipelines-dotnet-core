@@ -24,3 +24,7 @@ stages:
   - job: Test
     steps:
     - script: echo Testing!
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: 'test' 
+
